@@ -16,7 +16,6 @@ reg() {
   read answr2
   [ "$answr2" == "1" ] && ihavefolder
   [ "$answr2" == "2" ] && idonthavefolder
-  clear
 }
 sw() {
   clear
