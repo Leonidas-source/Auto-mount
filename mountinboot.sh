@@ -60,6 +60,7 @@ idonthavefolder() {
   answr14=$(lsblk -f $answr6 -o UUID | sed s/"UUID"/""/g | sed '/^$/d;s/[[:blank:]]//g')
   echo "UUID="$answr14 $answr5 $answr9 defaults,rw 0 0 | cat >> /etc/fstab
 }
+set -e
 clear
 user_check
 clear
